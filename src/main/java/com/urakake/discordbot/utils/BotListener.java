@@ -44,14 +44,14 @@ public class BotListener extends ListenerAdapter {
 
     @Override     // listener for reactions in #rank-select to set
     public void onMessageReactionAdd(MessageReactionAddEvent event){
-       if (event.getTextChannel().getName().equals("rank-select")){
+       if (event.getTextChannel().getName().equals("region-platform-set")){
             rra.add(event);
         }
     }
 
     @Override     // listener for reactions in #rank-select to set
     public void onMessageReactionRemove(MessageReactionRemoveEvent event){
-        if (event.getTextChannel().getName().equals("rank-select")){
+        if (event.getTextChannel().getName().equals("region-platform-set")){
             rra.remove(event);
         }
     }
